@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="theme.css">
+		<title>
+			UI Practice
+		</title>
+	<script src="problem3.js"></script>
+</head>
+
+	<body>
+		<div class ="que">
+			<p style="font-size: 18px">Please enter 2 numbers and I'll out put the largest one!</p>
+			<input type="int" id="1A"/>
+			<input type="int" id="1B"/>
+			<br />
+			<input type="button" value="Submit" onClick="alert(bigger(document.getElementById('1A').value, document.getElementById('1B').value) + ' is the biggest!')"/>
+		</div>
+		<div class ="que">
+			<p style="font-size: 18px">Enter 3 numbers and I'll tell you which is the biggest!</p>
+			<input type="int" id="2A"/>
+			<input type="int" id="2B"/>
+			<input type="int" id="2C"/>
+			<br />
+			<input type="button" value="Submit" onClick="alert(maxOfThree(document.getElementById('2A').value, document.getElementById('2B').value,document.getElementById('2C').value) + ' is the biggest!')"/>
+		</div>
+		<div class ="que">
+			<p style="font-size: 18px">Input a character and I'll tell you if it's a vowel!</p>
+			<input type="text" id="3A"/>
+			<br />
+			<input type="button" value="Submit" onClick="alert(isVowel(document.getElementById('3A').value))"/>
+		</div>
+		<div class ="que">
+			<p style="font-size: 18px">Input a string and I'll garble it up for you!</p>
+			<input type="text" id="4A"/>
+			<br />
+			<input type="button" value="Submit" onClick="alert(fanslate(document.getElementById('4A').value))"/>
+		</div>
+	</body>
+</html>

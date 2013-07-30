@@ -1,0 +1,16 @@
+.que{
+	width:600px;
+	float:left;
+	margin-bottom:10px;
+	margin-right: 100%;
+	margin-left: auto;
+	padding:5px;
+	background-color:#D9DAFF;
+	
+	
+	border-width: 4px;
+	border-style: solid;
+	border-radius:8px;
+	border-color: #7C7D94;
+		
+}
