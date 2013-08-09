@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="theme.css" />
 		<title>
 			UI Practice
@@ -9,6 +10,7 @@
 	</head>
 
 	<body>
+		<!-- Question 1 Button -->
 		<div class ="que">
 			<p style="font-size: 18px">Please enter 2 numbers and I'll out put the largest one!</p>
 			<input type="int" id="1A"/>
@@ -16,6 +18,7 @@
 			<br />
 			<input type="button" value="Submit" onClick="alert(bigger(document.getElementById('1A').value, document.getElementById('1B').value) + ' is the biggest!')"/>
 		</div>
+		<!-- Question 2 Button -->
 		<div class ="que">
 			<p style="font-size: 18px">Enter 3 numbers and I'll tell you which is the biggest!</p>
 			<input type="int" id="2A"/>
@@ -24,18 +27,59 @@
 			<br />
 			<input type="button" value="Submit" onClick="alert(maxOfThree(document.getElementById('2A').value, document.getElementById('2B').value,document.getElementById('2C').value) + ' is the biggest!')"/>
 		</div>
+		<!-- Question 3 Button -->
 		<div class ="que">
 			<p style="font-size: 18px">Input a character and I'll tell you if it's a vowel!</p>
 			<input type="char" id="3A"/>
 			<br />
 			<input type="button" value="Submit" onClick="alert(isVowel(document.getElementById('3A').value))"/>
 		</div>
+		<!-- Question 4 Button -->
 		<div class ="que">
 			<p style="font-size: 18px">Input a string and I'll garble it up for you!</p>
 			<input type="text" id="4A"/>
 			<br />
 			<input type="button" value="Submit" onClick="alert(fanslate(document.getElementById('4A').value))"/>
 		</div>
-
+		<!-- Question 5 Button -->
+		<div class ="que">
+			<p style="font-size: 18px">Add! Multiply! The choice is YOURS.</p>
+			<input type="text" id="5A"/>
+			<br />
+			<input type="button" value="Add Number" onClick="addValue(document.getElementById('5A').value)"/>
+			<input type="button" value="Sum" onClick="alert(arrSUM())"/>
+			<input type="button" value="Product" onClick="alert(arrPROD())"/>
+			<input type="button" value="Show Numbers" onClick="alert(arrSHOW())"/>
+			<input type="button" value="Clear Numbers" onClick="alert(arrCLEAR())"/>
+		</div>
+		<!-- Question 6 Button -->
+		<div class ="que">
+			<p style="font-size: 18px">Put a string in and I'll flip it!</p>
+				<input type="text" id="6A"/>
+				<br />
+				<input type="button" value="Reverse" onClick="alert(strFLIP(document.getElementById('6A').value))"/>
+		</div>
+		<!-- Question 7 Button-->
+		<div class ="que">
+			<p style="font-size: 18px">Care to learn season's greetings in Swedish?</p>
+				<input type="text" id="7A"/>
+				<br />
+				<input type="button" value="Translate" onClick="alert(strTranslate(document.getElementById('7A').value))"/>
+		</div>		
+		<!-- Question 8 Button-->
+		<div class ="que">
+			<p style="font-size: 18px">Punch in a sentence and I'll determine the longest word!</p>
+				<input type="text" id="8A"/>
+				<br />
+				<input type="button" value="Enter" onClick="alert(findLongestWord(document.getElementById('8A').value))"/>
+		</div>		
+		<!-- Question 9 Button-->
+		<div class ="que">
+			<p style="font-size: 18px">Punch in a sentence and I'll filter out the words greater than your chosen length!!</p>
+				<input type="text" id="9A" placeholder = "Enter sentence" onfocus ="if(this.placeholder == 'Enter sentence')this.placeholder='';" onblur="if(this.placeholder=='')this.placeholder='Enter sentence'" />
+				<input type="text" id="9B" placeholder = "Enter length" onfocus ="if(this.placeholder == 'Enter length')this.placeholder='';" onblur="if(this.placeholder=='')this.placeholder='Enter length'" />
+				<br />
+				<input type="button" value="Enter" onClick="alert(filterLongWords(document.getElementById('9A').value, document.getElementById('9B').value))"/>
+		</div>	
 	</body>
 </html>
